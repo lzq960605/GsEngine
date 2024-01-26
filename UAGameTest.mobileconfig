@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <dict>
+            <key>URL</key>
+            <string>http://127.0.0.1:12210/GetUserDeviceUDID</string> <!--接收数据的接口地址  注意这个端口，得跟应用启动的端口一致-->
+            <key>DeviceAttributes</key>
+            <array>
+                <string>SERIAL</string>
+                <string>MAC_ADDRESS_EN0</string>
+                <string>UDID</string>
+                <string>IMEI</string>
+                <string>ICCID</string>
+                <string>VERSION</string>
+                <string>PRODUCT</string>
+            </array>
+        </dict>
+        <key>PayloadOrganization</key>
+        <string>GS获取UDID -> 仔细描述文字</string>  <!--组织名称-->
+        <key>PayloadDisplayName</key>
+        <string>查询设备UDID -> 仔细看描述文字</string>  <!--安装时显示的标题-->
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadUUID</key>
+        <string>DB52BA6B-675E-498F-91C2-B34864608494</string>  <!--自己随机填写的唯一字符串，http://www.guidgen.com/ 可以生成-->
+        <key>PayloadIdentifier</key>
+        <string>xyz.yyyue.profile-service</string>
+        <key>PayloadDescription</key>
+        <string>《《如果连续安装失败或者没反应，直接返回游戏即可》》</string>   <!--描述-->
+        <key>PayloadType</key>
+        <string>Profile Service</string>
+    </dict>
+</plist>
